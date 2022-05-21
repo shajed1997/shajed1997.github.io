@@ -1,0 +1,56 @@
+.heroimage{position:relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.herotitle{
+position: absolute;
+top:95%;
+bottom:95%;
+left:20%;
+right: 20%;
+text-align: center;
+color: black;
+font-size: 60px;
+
+}
+
+.hero1{
+
+
+  position: absolute;
+top:170%;
+bottom:0%;
+left:20%;
+right: 20%;
+text-align: left;
+color: red;
+font-size: 50px;
+
+
+}
+
+
+.hero2{
+
+  position: absolute;
+top:170%;
+bottom:0%;
+left:20%;
+right: 20%;
+text-align: right;
+color: red;
+font-size: 50px;
+
+
+}
+
+
+.footer{
+background-color: lightgrey;
+text-align: center;
+padding: 12px;
+
+}

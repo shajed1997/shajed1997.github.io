@@ -1,0 +1,136 @@
+*{box-sizing: border-box;}
+html{
+  scroll-behavior: smooth;
+}
+:root{
+  --primarycolor:#cddc39;
+  --primarylight:#ffff6e;
+  --primarydark:#99aa00;
+}
+
+/*title*/
+
+.title{
+  color:var(--primarycolor);
+text-align: center;
+font-size: 5em;
+text-shadow: 2px 2px 5px var(--primarydark);
+
+}
+
+/*navigation*/
+.navigation{
+  background-color: var(--primarycolor);
+}
+.navigation a{
+display:inline-block;
+width: 33%;
+text-align: center;
+padding: 1em 0px;
+background-color: var(--primarydark);
+text-decoration: none;
+color:var(--primarylight);
+font-size: 1.2em;
+
+
+}
+
+.navigation a:hover{
+  background-color: var(--primarylight);
+  color:var(--primarydark);
+  text-decoration: underline;
+}
+.cardcontainer{
+  border: solid yellow;
+  display:inline-block;
+
+}
+.card{
+border: solid yellow;
+  background-color: var(--primarycolor);
+  text-shadow: 2px 2px 5px var(--primarydark);
+  width:20%;
+  margin:2%;
+  float:left;
+
+}
+.imgcard{
+width:100%;
+}
+.titlecard{
+  text-align:center;
+}
+.pcard{
+  padding: 0.5em;
+  height: 25em;
+  overflow:hidden;
+}
+.creditcard{
+padding: 0.5em;
+font-size: 0.7em;
+font-style: italic;
+
+}
+
+.footerinfo{
+text-align: center;
+margin-top: ridge 1px var(--primarydark);
+background-color: var(--primarycolor);
+padding:1em 0em;
+}
+/*-- large resolution--*/
+@media only screen and (max-width:1350px){
+body {
+  background-color: pink;
+
+}
+.pcard{
+  height:15em;
+}
+}
+/*-- tablet resolution--*/
+@media only screen and (max-width:1140px){
+body {
+  background-color: blue;
+
+}
+.card{
+  width:40%;
+  margin-left: 6%;
+}
+.pcard{height:11em;}
+}
+/*--mini tablet resolution --*/
+@media only screen and (max-width:850px){
+body {
+  background-color: yellow;
+
+}.navigation a{
+width: 32%;
+}
+/*-- small resolution :tablet--*/
+.pcard{height:14em;}
+}
+@media only screen and (max-width:700px){
+body {
+  background-color: green;
+
+}.navigation a{
+width: 100%;
+margin-bottom: 1px;
+
+}
+.card{width:80%;
+margin-left:10%;}
+
+
+}
+/*-- small resolution: smart phone--*/
+@media only screen and (max-width:500px) {
+  body {
+    background-color:red;
+
+  }
+  .title{font-size:3em;
+  }
+}

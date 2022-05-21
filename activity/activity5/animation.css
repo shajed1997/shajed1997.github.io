@@ -1,0 +1,357 @@
+.title{
+  background-color: skyblue;
+  color:black;
+  text-align:center;
+  font-family: monospace;
+padding: 12px;
+}
+.container{
+width: 80%;
+margin-right: auto;
+margin-left: auto;
+border: outset 10px darkgrey;
+position: relative;
+overflow: hidden;
+}
+.background{
+  width:100%
+}
+.bus{
+  width:30%;
+  bottom: 0%;
+  right:-50px;
+  position: absolute;
+  animation-name: slideLeftRight;
+  animation-duration: 2s;
+  animation-iteration-count:2;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+
+}
+@keyframes slideLeftRight{
+  from{transform:translateX(0%);}
+  to{transform:translatex(-250%);}
+}
+
+.cloud1{
+  position: absolute;
+top:0%;
+left:0%;
+animation-name:slideclouds;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+.cloud2{
+position:absolute;
+width:30%;
+top:2%;
+left:-20%;
+animation: slideclouds 10s infinite;
+
+}
+.cloud3{
+  position: absolute;
+  width: 40%;
+  top:5%;
+  left:-30%;
+  animation: slideclouds 13s infinite;
+}
+@keyframes slideclouds {
+0%{transform: translateX(0%);opacity: 0.9;}
+100%{transform:translateX(300%);opacity: 0.3;}
+}
+.sun{position:absolute;
+width: 30%;
+top:10%;
+left:0%;
+animation: slideSun 15s infinite;
+}
+@keyframes slideSun {
+  0%{transform: translate(0,0) rotate(0deg);opacity: 0.9}
+50%{transform:translate(600px,100px) rotate(100deg);opacity: 0.3}
+  100%{transform:translate(450px,-30px) rotate(-60deg); opacity :0.7}
+
+}
+
+.msg{
+  position: absolute;
+  top:40%;
+  bottom:40%;
+  left:20%;
+  right: 20%;
+  text-align: center;
+  animation: zoommsg 10s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes zoommsg {
+  0%{transform: scale(0) translate(0,0);}
+  25%{transform: scale(1);color:red;}
+  50%{transform: scale(.3)translate(100px,50px);color: green;}
+  75%{transform: scale(2); color:orange;}
+  100%{transform: scale(0) translate(-200px,-300px);color:blue;}
+
+}
+html{scroll-behavior: smooth;}
+.horizontal{
+  background-color:purple;
+  color: lightgrey;
+  height: 50px;
+  overflow: hidden;
+}
+.horizontal a{
+  color: lightgrey;
+display:block;
+width: 30%;
+border:ridge 1px lightgrey;
+float: right;
+height: 80%;
+text-align: center;
+padding: 1px 0px;
+font-size: 1.2em;
+text-decoration: none;
+}
+
+.horizontal a:hover{
+  background-color: skyblue;
+  text-decoration: underline;
+}
+.horizontal span{
+font-family: algerian;
+width: 30%;
+height: 100%;
+float: left;
+border-top:ridge 1px lightgrey;
+padding :3px;
+font-size: 2em;
+ }
+ .heading{
+   background-color: yellow;
+ color:black;
+ text-align:center;
+ font-family: monospace;
+ padding: 10px;
+
+ }
+ .figure{
+   width: 80%;
+ margin-right: auto;
+ margin-left: auto;
+ border: outset 10px darkgrey;
+ position: relative;
+ overflow: hidden;
+ }
+ .love2{
+
+width: 100%;
+   animation: slidelove2 .5s ;
+   animation-delay: 4s;
+ }
+ @keyframes slidelove2 {
+  0%{filter:invert(0% );}
+100%{filter:invert(100%);}
+ }
+ .love3{
+   position: absolute;
+   top:40%;
+   bottom:40%;
+   left:20%;
+   right: 20%;
+   text-align: center;
+   animation: slidelove3 3s infinite;
+ }
+ @keyframes slidelove3 {
+     0%{transform: scale(2) translate(0,0);}
+       100%{transform: scale(0) translate(0,0);}
+   }
+   .love4{
+      position: absolute;
+     top:40%;
+     bottom:40%;
+     left:20%;
+     right: 20%;
+     text-align: center;
+     animation: slidelove4 3s infinite;
+     font-size: 150px;
+   }
+
+   @keyframes slidelove4 {
+     0%{transform: scale(2) translate(0,0); color: blue}
+       0%{transform: scale(2) translate(0,0);color: skyblue}
+     0%{transform: scale(2) translate(0,0); color: white}
+     100%{transform: scale(0) translate(-200px,-300px);color:blue;}
+   }
+
+
+
+ .love15{
+   position:absolute;
+   width: 20%;
+   top:80%;
+   bottom:7%;
+   left:30%;
+   right: 30%;
+   animation: slidelove15 0.1s infinite ;
+
+ }
+ @keyframes slidelove15{
+   0%{opacity: 0.9;}
+   100%{opacity: 0.3;}
+ }
+ .love14{
+   position:absolute;
+   width: 20%;
+   top:29%;
+   bottom:34%;
+   left:15%;
+   right: 15%;
+   animation: slidelove14 .1s infinite ;
+
+ }
+ @keyframes slidelove14{
+   0%{opacity: 0.9;}
+   100%{opacity: 0.3;}
+ }
+ .love13{
+   position:absolute;
+   width: 10%;
+   top:80%;
+   bottom:40%;
+   left:65%;
+   right: 15%;
+   animation: slidelove13 0.4s  infinite ;
+
+
+ }
+ @keyframes slidelove13{
+   0%{opacity: 0.9;}
+   100%{opacity: 0.3;}
+ }
+ .love12{
+   position:absolute;
+   width: 15%;
+   top:20%;
+   bottom :70%;
+   left:75%;
+   right: 15%;
+   animation: slidelove12 .4s infinite  ;
+
+ }
+ @keyframes slidelove12{
+   0%{opacity: 0.9;}
+   100%{opacity: 0.3;}
+ }
+ .love11{
+   position:absolute;
+   width: 10%;
+   top:50%;
+   bottom:90%;
+   left:58%;
+   right: 56%;
+   animation: slidelove11 0.1s infinite ;
+
+ }
+ @keyframes slidelove11{
+   0%{opacity: 0.9;}
+   100%{opacity: 0.3;}
+ }
+ .love10{
+   position:absolute;
+   width: 10%;
+   top:5%;
+   bottom:20%;
+   left:15%;
+   right: 15%;
+   animation: slidelove10 0.1s infinite ;
+
+ }
+ @keyframes slidelove10{
+   0%{opacity: 0.9;}
+   100%{opacity: 0.3;}
+ }
+ .love9{
+   position:absolute;
+   width: 15%;
+   top:90%;
+   bottom:78%;
+   left:70%;
+   right: 15%;
+   animation: slidelove9 0.1s infinite ;
+
+ }
+ @keyframes slidelove9{
+   0%{opacity: 0.9;}
+   100%{opacity: 0.3;}
+ }
+ .love8{
+   position:absolute;
+   width: 10%;
+   top:20%;
+   bottom:40%;
+   left:20%;
+   right: 15%;
+   animation: slidelove8 0.1s infinite ;
+
+ }
+ @keyframes slidelove8{
+   0%{opacity: 0.9;}
+   100%{opacity: 0.3;}
+ }
+
+ .love7{
+   position:absolute;
+   width: 30%;
+   top:20%;
+   bottom:30%;
+   left:30%;
+   right: 30%;
+   animation: slidelove7 0.1s infinite;
+
+ }
+ @keyframes slidelove7{
+
+   0%{opacity: 0.9;}
+   100%{opacity: 0.3;}
+
+ }.love6{
+   position:absolute;
+   width: 10%;
+   top:3%;
+   bottom:35%;
+   left:15%;
+   right: 15%;
+   animation: slidelove6.1s infinite  ;
+
+ }
+ @keyframes slidelove6{
+
+     0%{opacity: 0.9;}
+     100%{opacity: 0.3;}
+ }
+ .love5{
+   position:absolute;
+   width: 10%;
+   top:8%;
+   bottom:80%;
+   left:15%;
+   right: 15%;
+   animation: slidelove6.1s infinite  ;
+
+ }
+ @keyframes slidelove6{
+
+     0%{opacity: 0.9;}
+     100%{opacity: 0.3;}
+ }
+
+
+ .footer{
+   background-color: pink;
+ color:black;
+ text-align:center;
+ font-family: monospace;
+ padding: 10px;
+
+ }
